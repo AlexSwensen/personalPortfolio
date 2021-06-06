@@ -1,0 +1,168 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #000000;
+  font-size: 16px;
+  color: white;
+}
+
+/* Color scheme should be white, black, and a pop of color/fun color. */
+
+/*LAYOUT*/
+.container {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto auto 1fr;
+  grid-template-areas:
+    "header header header"
+    "profile profile profile"
+    "cards cards cards"
+    "footer footer footer";
+}
+
+header {
+  grid-area: header;
+  width: 100%;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  position: fixed;
+  background-color: rgb(22, 22, 22);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar {
+  top: 0;
+  z-index: 10;
+}
+.nav-link {
+  justify-self: end;
+  padding: 15px;
+}
+
+.profile {
+  grid-area: profile;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px 15px 25px 15px;
+}
+
+.profile-description {
+  max-width: 400px;
+}
+
+.profile img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.resume {
+  padding: 15px;
+  background-color: #17bebb;
+}
+#projects {
+  grid-area: cards;
+  grid-template: 1/4;
+  /*
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; */
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+}
+
+.project-tile {
+  border: 1px solid white;
+  margin: 1rem;
+  padding: 0.5rem;
+  min-width: 200px;
+}
+
+#projects img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+footer {
+  grid-area: footer;
+  grid-column: 1/4;
+  grid-row: 4/5;
+  color: white;
+  justify-self: center;
+  align-self: flex-end;
+}
+
+/* Typography */
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 2.5rem;
+}
+header a:hover {
+  color: #17bebb;
+  transition: color 0.5s ease-in;
+}
+a:visited {
+  text-decoration: none;
+}
+
+#title {
+  font-weight: bolder;
+}
+
+h1 {
+  color: white;
+}
+
+.profile p {
+  text-align: justify;
+  word-wrap: break-word;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+span {
+  color: #17bebb;
+  font-size: 1.5rem;
+}
+
+.project-tile {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+.contact-link {
+  letter-spacing: 1.5rem;
+}
+.contact-link img:hover {
+  filter: brightness(80%);
+}
+
+/* DESKTOP */
+@media screen and (min-width: 500px) {
+  #projects {
+    flex-direction: row;
+  }
+}
