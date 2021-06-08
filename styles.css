@@ -74,6 +74,7 @@ nav {
   padding: 15px;
   background-color: #17bebb;
 }
+
 #projects {
   grid-area: cards;
   grid-template: 1/4;
@@ -84,16 +85,23 @@ nav {
   justify-content: center; */
 
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-
+  justify-content: center;
   margin: 0 auto;
+}
+
+#project-title {
+  width: 100%;
+  text-align: center;
+  color: #17bebb;
 }
 
 .project-tile {
   border: 1px solid white;
   margin: 1rem;
   padding: 0.5rem;
-  min-width: 200px;
+  max-width: 400px;
 }
 
 #projects img {
