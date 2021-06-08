@@ -117,14 +117,10 @@ a {
   color: rgb(255, 255, 255);
   font-weight: 2.5rem;
 }
+
 header a:hover {
   color: #17bebb;
-  transition: color 0.5s ease-in;
 }
-a:visited {
-  text-decoration: none;
-}
-
 #title {
   font-weight: bolder;
 }
@@ -163,6 +159,7 @@ footer {
 /* DESKTOP */
 @media screen and (min-width: 500px) {
   #projects {
+    display: flex;
     flex-direction: row;
   }
 }
