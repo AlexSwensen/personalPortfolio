@@ -1,6 +1,6 @@
 # Welcome to my Personal Portfolio
 
-Feel free to visit at [Personal Site](https://alexandriastech.me/)
+Feel free to visit at [alexandriastech.me](https://alexandriastech.me/)
 
 ## Purpose
 
