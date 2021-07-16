@@ -4,88 +4,192 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>Alexandria's Tech</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,400&family=Raleway&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Alexandria — Cybersecurity & Front-End</title>
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <nav id="navbar">
-                <div class="nav-link"><a href="#home">Home</a></div>
-                <div class="nav-link"><a href="#portfolio">Portfolio</a></div>
-                <div class="nav-link"><a href="#contact">Contact</a></div>
-            </nav>
-        </header>
-        <div class="profile" id="welcome-section">
-            <span id="home"></span>
-            <h1 id="title"><span>Hello to all</span>, <br> I'm Alexandria.</h1> <img class="profile-image"
-                src="images/profileImage.JPG" alt="" width="80px" height="80px">
 
-            <div class="profile-description">
-                <p> I am a rising senior at university studying Cybersecurity & Digital Forensics. I am on a
-                    journey to become a self-taught front-end web developer. I'm currently
-                    learning
-                    HTML, CSS, and Javascript.</p>
-            </div>
+    <!-- 𝕎𝕖𝕝𝕔𝕠𝕞𝕖 𝕥𝕠 𝕞𝕪 𝕤𝕚𝕥𝕖! ℂ𝕣𝕖𝕒𝕥𝕖𝕕 𝕓𝕪 𝔸𝕝𝕖𝕩𝕒𝕟𝕕𝕣𝕚𝕒'𝕤 𝕋𝕖𝕔𝕙, 𝔸𝕝𝕖𝕩𝕒𝕟𝕕𝕣𝕚𝕒 -->
 
-            <div class="resume"><a href="assets/Alexandria Pigram.pdf" alt="resume" target="_blank">Resume</a> </div>
-
-        </div>
+    <div class="w-screen">
+        <!-- ONE -->
 
 
-        <section id="projects">
+        <!--  NAV BAR  -->
+        <nav class="fixed bg-indigo-600 w-full text-white flex ">
+            <!--   DIV CONTAINS MENU BUTTON AND  NAME ONLY  -->
+            <button class="px-4 ease-linear transform hover:scale-125 transition duration-500" alt="home"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256">
+                    <rect width="256" height="256" fill="none"></rect>
+                    <polyline points="64 88 16 128 64 168" fill="none" stroke="#ffffff" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="24"></polyline>
+                    <polyline points="192 88 240 128 192 168" fill="none" stroke="#ffffff" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="24"></polyline>
+                    <line x1="160" y1="40" x2="96" y2="216" fill="none" stroke="#ffffff" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="24"></line>
+                </svg></button>
 
-            <span id="portfolio"></span>
+            <ul class="flex px-2 text-sm sm:text-md ml-auto list-none mr-4">
+                <li class="px-2 py-2 hover:bg-indigo-800"><a href="#">Home</a></li>
+                <li class="px-2 py-2 hover:bg-indigo-800"><a href="#portfolio">Portfolio</a></li>
+                <li class="px-2 py-2 hover:bg-indigo-800"><a href="https://hashnode.com/@alexandriastech" rel="noopener"
+                        rel="noreferrer" target="_blank">Blog</a></li>
+                <li class="px-2 pt-2 hover:bg-indigo-800"><a href="#contact">Contact</a></li>
+            </ul>
 
-            <h1 id="project-title">Projects</h1>
-            <div class="project-tile">
-                <a href="https://ironheart93.github.io/Lemon-It-Up/" target="_blank">
-                    <h1>Business Landing Page</h1>
-                    <img src="images/landing-page.png" alt="project" height="150px" max-width="100%">
-                    <p>This is a business landing page made with HTML and CSS.</p>
-
-                </a>
-
-            </div>
-
-            <div class="project-tile">
-                <a href="https://codepen.io/alexandriastech/full/QWpaMoy" target="_blank">
-                    <h1>Technical Documentation</h1>
-                    <img src="images/technical documation.png" alt="project" height="150px" max-width="100%">
-                    <p>This is a technical documentation page built with HTML and CSS.</p>
-
-                </a>
-
-            </div>
+        </nav>
 
 
+        <main class="pt-24 flex flex-col">
+            <section id="aboutMe">
+
+                <div class="flex flex-col justify-center items-center sm:flex-row sm:flex-no-wrap mx-4">
+                    <div id="bio">
+                        <h1 class="select-none text-5xl  sm:text-6xl text-indigo-700 font-bold">Greetings! <br> My name
+                            is
+                            Alexandria!</h1>
+                        <span class="select-none uppercase text-xl sm:text-2xl">Cybersecurity Student. Front-end
+                            developer.</span>
+                        <div class="text-justify mt-6 text-gray-800 text-md">
+                            <p class="select-none">I am a fourth-year university student
+                                studying Cybersecurity &
+                                Digital Forensics with a minor in Management Information Systems. My passions lie in
+                                content creation, web development, and Cybersecurity.
+                            </p>
+                            <p class="select-none mt-2">I've always had a love for the web but never got the experience
+                                to code
+                                until college. Recently, I've developed a passion for front-end web development and want
+                                to continue to build small websites to improve my skills. <span
+                                    class="font-medium text-indigo-700">My goal is to provide
+                                    valuable
+                                    content to future techies </span> that seek to take a step into the tech field
+                                (technical and
+                                non-technical).
+                            </p>
+                        </div>
+
+                        <button
+                            class="bg-indigo-600  py-4 px-4 mt-4 rounded font-bold text-white transition duration-500 ease-in-out hover:bg-indigo-700 transform hover:-translate-y-1">See
+                            Projects</button>
+                    </div>
+                    <div class="px-8 py-4 mt-6">
+                        <img src="images/profileImage.png" alt="profile picture" class="border border-none rounded-full"
+                            id="profile" onmouseover="this.src='images/notSmiles.png'"
+                            onmouseout="this.src='images/profileImage.png'">
+                    </div>
+
+
+
+                </div>
+            </section>
+
+            <section id="skills" class="mt-6 py-6 bg-white w-screen bg-opacity-25">
+
+                <h2 class="text-center uppercase tracking-widest mt-2 text-4xl">Skills</h2>
+
+                <div class="flex justify-center text-left px-4 py-4 mx-4">
+
+
+                    <ul class="mx-16 mt-4 text-indigo-700 max-w-xs  text-md font-bold">
+                        <li>HTML5</li>
+                        <li class="mt-2">CSS3</li>
+                        <li class="mt-2">Tailwind CSS</li>
+                        <li class="mt-2">Git</li>
+                        <li class="mt-2">Proofreading & Writing</li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <h2 class="text-2xl text-center uppercase tracking-widest mt-2 pt-10 px-4 text-4xl">Recent Projects</h2>
+                <div class="flex justify-center">
+                    <p class="pt-6 text-justify text-justify  text-md mx-6">Here is what I've been working on in
+                        the past
+                        year to
+                        improve my
+                        skillset. <br>
+                        There
+                        will be
+                        portfolio, projects, and other content such as articles to look through.</p>
+                </div>
+
+                <div class="projects flex flex-row justify-center sm: items-center flex-wrap mt-16 mx-6">
+                    <div class="projectOne px-6 py-6 transition duration-500 ease-in-out transform hover:-translate-y-2"">
+                        <img src=" images/ClientProject.svg" alt="project">
+
+                        <!-- INSPIRATION BY https://dribbble.com/shots/15691211-Login-UI-->
+                        <h3 class="text-4xl font-black break-normal">Login Page: Client Project</h3>
+                        <p class="text-md text-justify max-w-sm">This was my first client project to revamp a login
+                            page. </p>
+
+
+                        <button
+                            class="bg-indigo-700  py-4 px-4 mt-4 rounded font-bold text-white transition duration-500 ease-in-out hover:bg-indigo-800 transform hover:-translate-y-1">☁️
+                            Thought
+                            Process</button>
+                    </div>
+                    <div class="projectTwo px-6 py-6 transition duration-500 ease-in-out transform hover:-translate-y-2"">
+                        <img src=" images/Article.svg" alt="project">
+
+                        <h3 class="text-4xl font-black"> My First Internship</h3>
+                        <p class="text-md text-justify max-w-sm">Read about experience finding my first internship —
+                            applying,
+                            searching,
+                            etc. </p>
+
+
+                        <button
+                            class="bg-indigo-700  py-4 px-8 mt-4 rounded font-bold text-white transition duration-500 ease-in-out hover:bg-indigo-800 transform hover:-translate-y-1"><a
+                                href="https://alexandriastech.hashnode.dev/how-i-got-my-first-cybersecurity-internship-with-no-prior-experience"
+                                rel="noopener" rel="noreferrer" target="_blank">Read</a>
+                        </button>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+        </main>
+
+        <section class="flex flex-col justify-center items-center mt-12" id="contact">
+            <h2 class="text-5xl font-bold mb-2 mt-12 text-center" id="reachMe">Reach out to me!</h2>
+            <p class="mx-4 text-center">Feel free to send collaboration ideas, work opportunities and endeavors!</p>
+
+            <a href="mailto: alexandriastech@gmail.com"
+                class="bg-indigo-700  py-4 px-8 mt-4 rounded font-bold text-white transition duration-500 ease-in-out hover:bg-indigo-800 transform hover:-translate-y-1">Send
+                Email</a>
         </section>
 
-        <footer id="contact">
-            <p> Connect with me:</p>
-            <span class="contact-link">
-                <a href="https://www.linkedin.com/in/alexandriapigram/" target="_blank">
-                    <img src="images/linkedin.png" alt="linkedin">
-                </a>
 
-                <a href="https://twitter.com/AlexandriasTech" target="_blank">
-                    <img src="images/twitter.png" alt="twitter">
-                </a>
+        <footer class="flex flex-col justify-center items-center pt-12 pb-4 mx-4">
+            © Alexandria Pigram | 2021
 
-                <a href="https://github.com/ironheart93" target="_blank">
-                    <img src="images/github.png" alt="github">
-                </a>
-
-            </span>
-            <p>Alexandria's Tech © 2021</p>
-            Icons by: <a href="https://icons8.com/" target="_blank">Icons8</a>
+            </form>
         </footer>
     </div>
+
+
+    <script>
+
+
+
+    </script>
+
 </body>
 
 </html>
