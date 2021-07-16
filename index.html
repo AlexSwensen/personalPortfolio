@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#5a67d8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,400&family=Raleway&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Alexandria — Cybersecurity & Front-End</title>
+
+    <title>Alexandria | Cybersecurity & Front-End</title>
 </head>
 
 <body>
@@ -45,7 +45,6 @@
 
             <ul class="flex px-2 text-sm sm:text-md ml-auto list-none mr-4">
                 <li class="px-2 py-2 hover:bg-indigo-800"><a href="#">Home</a></li>
-                <li class="px-2 py-2 hover:bg-indigo-800"><a href="#portfolio">Portfolio</a></li>
                 <li class="px-2 py-2 hover:bg-indigo-800"><a href="https://hashnode.com/@alexandriastech" rel="noopener"
                         rel="noreferrer" target="_blank">Blog</a></li>
                 <li class="px-2 pt-2 hover:bg-indigo-800"><a href="#contact">Contact</a></li>
@@ -76,15 +75,24 @@
                                 to continue to build small websites to improve my skills. <span
                                     class="font-medium text-indigo-700">My goal is to provide
                                     valuable
-                                    content to future techies </span> that seek to take a step into the tech field
+                                    content to people that want to break into the tech field</span>
                                 (technical and
                                 non-technical).
                             </p>
-                        </div>
+                            <span class="socials flex items-center space-x-6 my-4">
+                                <a href="https://github.com/ironheart93" target="_blank" rel="noopener"
+                                    rel="noreferrer"><img src="images/githuub.svg" alt="github" height="60"
+                                        width="60"></a>
+
+                                <a href="https://www.twitch.tv/alexandriastech" target="_blank" rel="noopener"
+                                    rel="noreferrer"><img src="images/twitch.svg" alt="twitch" width="60"
+                                        height="60"></a>
+                        </div></span>
 
                         <button
-                            class="bg-indigo-600  py-4 px-4 mt-4 rounded font-bold text-white transition duration-500 ease-in-out hover:bg-indigo-700 transform hover:-translate-y-1">See
-                            Projects</button>
+                            class="bg-indigo-600  py-4 px-4 mt-4 rounded font-bold text-white transition duration-500 ease-in-out hover:bg-indigo-700 transform hover:-translate-y-1"><a
+                                href="#portfolio"> See
+                                Projects</a></button>
                     </div>
                     <div class="px-8 py-4 mt-6">
                         <img src="images/profileImage.png" alt="profile picture" class="border border-none rounded-full"
@@ -99,20 +107,21 @@
 
             <section id="skills" class="mt-6 py-6 bg-white w-screen bg-opacity-25">
 
-                <h2 class="text-center uppercase tracking-widest mt-2 text-4xl">Skills</h2>
+                <h2 class="text-center uppercase tracking-widest mt-2 text-4xl">Tools & Tech I've Worked With</h2>
 
-                <div class="flex justify-center text-left px-4 py-4 mx-4">
+                <div class="skillSet flex flex-row flex-wrap justify-center mt-8">
+                    <img src="images/html5.svg" alt="html5" width="60" height="60" class="mx-6">
+                    <img src="images/css3.svg" alt="css3" width="60" height="60" class="mx-6">
+                    <img src="images/tailwindCSS.svg" alt="html5" width="60" height="60" class="mx-6">
+                    <img src="images/javascript.svg" alt="javascript" width="60" height="60" class="mx-6">
+                    <img src="images/linux.svg" alt="linux" width="60" height="60" class="mx-6">
+                    <img src="images/canva icon.png" alt="canva" width="60" height="60" class="mx-6">
 
-
-                    <ul class="mx-16 mt-4 text-indigo-700 max-w-xs  text-md font-bold">
-                        <li>HTML5</li>
-                        <li class="mt-2">CSS3</li>
-                        <li class="mt-2">Tailwind CSS</li>
-                        <li class="mt-2">Git</li>
-                        <li class="mt-2">Proofreading & Writing</li>
-                    </ul>
 
                 </div>
+
+
+
             </section>
 
             <section id="portfolio">
@@ -128,9 +137,10 @@
                         portfolio, projects, and other content such as articles to look through.</p>
                 </div>
 
-                <div class="projects flex flex-row justify-center sm: items-center flex-wrap mt-16 mx-6">
-                    <div class="projectOne px-6 py-6 transition duration-500 ease-in-out transform hover:-translate-y-2"">
-                        <img src=" images/ClientProject.svg" alt="project">
+                <div class="flex flex-col justify-center items-center sm:flex-row flex-wrap mt-16 mx-6">
+                    <div
+                        class="projectOne px-6 py-6 transition duration-500 ease-in-out transform hover:-translate-y-2">
+                        <img src="images/ClientProject.svg" alt="project">
 
                         <!-- INSPIRATION BY https://dribbble.com/shots/15691211-Login-UI-->
                         <h3 class="text-4xl font-black break-normal">Login Page: Client Project</h3>
@@ -139,11 +149,12 @@
 
 
                         <button
-                            class="bg-indigo-700  py-4 px-4 mt-4 rounded font-bold text-white transition duration-500 ease-in-out hover:bg-indigo-800 transform hover:-translate-y-1">☁️
+                            class="bg-indigo-700 py-4 px-4 mt-4 rounded font-bold text-white transition duration-500 ease-in-out hover:bg-indigo-800 transform hover:-translate-y-1">☁️
                             Thought
                             Process</button>
                     </div>
-                    <div class="projectTwo px-6 py-6 transition duration-500 ease-in-out transform hover:-translate-y-2"">
+                    <div
+                        class="projectTwo px-6 py-6 transition duration-500 ease-in-out transform hover:-translate-y-2">
                         <img src=" images/Article.svg" alt="project">
 
                         <h3 class="text-4xl font-black"> My First Internship</h3>
@@ -168,8 +179,12 @@
         </main>
 
         <section class="flex flex-col justify-center items-center mt-12" id="contact">
-            <h2 class="text-5xl font-bold mb-2 mt-12 text-center" id="reachMe">Reach out to me!</h2>
-            <p class="mx-4 text-center">Feel free to send collaboration ideas, work opportunities and endeavors!</p>
+            <span class="flex">
+                <h2 class="text-5xl font-bold text-center" id="reachMe">Reach out to me! </h2>
+                <img src="images/email.svg" alt="email" width="60" height="60" class="mx-6">
+            </span>
+            <p class="mx-4 text-center mt-4">Want to send feedback or contact me about potential work & business
+                opportunities?</p>
 
             <a href="mailto: alexandriastech@gmail.com"
                 class="bg-indigo-700  py-4 px-8 mt-4 rounded font-bold text-white transition duration-500 ease-in-out hover:bg-indigo-800 transform hover:-translate-y-1">Send
@@ -177,10 +192,31 @@
         </section>
 
 
-        <footer class="flex flex-col justify-center items-center pt-12 pb-4 mx-4">
-            © Alexandria Pigram | 2021
 
-            </form>
+        <footer class="flex flex-col justify-center items-center mt-12 w-full bg-white bg-opacity-25 text-center">
+            <p>© Alexandria Pigram | 2021</p>
+            <p class="text-xs mt-4">
+                <a href="https://iconscout.com/icons/linux" target="_blank">Linux</a>, <a
+                    href="https://iconscout.com/icons/css3" target="_blank">CSS3</a>, <a
+                    href="https://iconscout.com/icons/html5" target="_blank">HTML5</a>, and <a
+                    href="https://iconscout.com/icons/git" target="_blank">Git</a> by <a
+                    href="https://iconscout.com/contributors/icon-mafia">Icon
+                    Mafia</a>
+
+                <br>
+                <a href="https://iconscout.com/icons/email" target="_blank">Email Icon</a> on <a
+                    href="https://iconscout.com" target="_blank">Iconscout</a>
+                <br>
+                <a href="https://iconscout.com/icons/developer-tool" target="_blank">Githuub Logo Icon</a> by <a
+                    href="https://iconscout.com/contributors/unicons" target="_blank">Unicons Font</a> on <a
+                    href="https://iconscout.com" target="_blank">Iconscout</a>
+                <br>
+                <a href="https://iconscout.com/icons/twitch" target="_blank">Twitch Logo Icon</a> by <a
+                    href="https://iconscout.com/contributors/enamostudios" target="_blank">Enamo Studios</a> on <a
+                    href="https://iconscout.com" target="_blank">Iconscout</a>
+
+            </p>
+
         </footer>
     </div>
 
